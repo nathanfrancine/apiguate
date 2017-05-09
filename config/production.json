@@ -1,0 +1,30 @@
+{
+    "cassandra": {
+        "host": ["172.22.103.103", "172.22.103.104", "172.22.103.105"]
+    },
+    "localServer": {
+        "host": "0.0.0.0",
+        "port": 3000,
+        "servicePathCostumer": "/v1/mobile/billing/subscribers/:msisdn?",
+        "timeout": "6s",
+        "params": {
+            "codeArea": "502",
+            "msisdnLength": 11
+        },
+        "security": {
+            "enable": true,
+            "user": "tigoapilatam",
+            "password": "Comcel2012",
+            "secret": "t1g03v0lut10nAp1t1g03v0lut10nAp1",
+            "type": "hex",
+            "algorithm": "HS256",
+            "lagTime": 10
+        }
+    },
+    "timezone": {
+        "default": "America/Guatemala"
+    },
+    "logs": {
+        "log": "./logs/log.log"
+    }
+}

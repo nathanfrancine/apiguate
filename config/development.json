@@ -1,0 +1,14 @@
+{
+    "localServer": {
+        "host": "0.0.0.0",
+        "port": 3000,
+        "servicePathCostumer": "/hello",
+        "timeout": "6s"
+    },
+    "timezone": {
+        "default": "America/Guatemala"
+    },
+    "logs": {
+        "log": "./logs/log.log"
+    }
+}
