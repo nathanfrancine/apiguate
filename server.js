@@ -10,4 +10,4 @@ app.get('/', function (req, res) {
 })
 
 app.get('/hello',serviceCustomer.customer)
-app.listen(80)
+app.listen(8080,'0.0.0.0')
