@@ -8,10 +8,7 @@ var utils = require('./utils.js');
 
 const port = process.env.PORT || config.get('localServer.port')
 const app = express()
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+
 app.use(timeout(config.get('localServer.timeout')))
 
 const router = express.Router()

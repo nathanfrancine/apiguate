@@ -11,5 +11,5 @@ var utils = require('../utils.js');
 
 
 exports.customer = function(req, res, next) {
-    res.status(200).json('hello tigo');
+    res.send('<h1> hello api Guatemala</h1>')
 }
